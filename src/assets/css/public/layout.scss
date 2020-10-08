@@ -1,0 +1,15 @@
+//默认布局的样式
+
+.el-container {
+    .el-header,
+    .el-main,
+    .el-footer {
+        padding: 0;
+    }
+    .el-header{
+        background: #F8F8F8;
+        color: #999;
+        font-size: 12px;
+        height: 40px;
+    }
+}
