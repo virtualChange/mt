@@ -1,24 +1,21 @@
 <template>
   <div class="header-bar clear-fix">
-      <city />
-      <header-nav />
+      <nav-bar></nav-bar>
       <search-bar />
   </div>
 </template>
 <script>
-import city from '@/components/header/city'
-import headerNav from '@/components/header/nav'
-import searchBar from '@/components/header/searchBar'
 
+import searchBar from '@/components/header/searchBar'
+import navBar from '@/components/header/navBar'
 export default {
   components: {
-    city,
-    headerNav,
-    searchBar
+    searchBar,
+    navBar
   }
 }
 </script>
 
 <style lang="scss">
-@import '@/assets/css/public/header';
+@import "@/assets/css/public/header";
 </style>

@@ -7,14 +7,17 @@
       <router-view></router-view>
     </el-main>
     <el-footer height="">
+      <my-footer />
     </el-footer>
   </el-container>
 </template>
 <script>
 import myHeader from '@/components/header/index'
+import myFooter from '@/components/footer/index'
 export default {
   components: {
-    myHeader
+    myHeader,
+    myFooter
   }
 }
 </script>
