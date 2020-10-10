@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import '@/axios'
 import '@/element-ui'
 import '@/directive'
 Vue.config.productionTip = false
