@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import DefaultPage from '@/layout/default'
-import homePage from '@/components/homePage'
+import homePage from '@/components/home'
 
 Vue.use(VueRouter)
 
@@ -14,6 +14,10 @@ const routes = [{
     path: '/home',
     name: 'homePage',
     component: homePage
+  }, {
+    path: '/changeCity',
+    name: 'changeCity',
+    component: () => import('@/components/changeCity/index.vue')
   }]
 }]
 

@@ -2,7 +2,9 @@
   <div class="header-bar-position">
     <i></i>
     <span class="current-city">北京</span>
-    <router-link to="change-city" class="change-city">切换城市</router-link>
+    <router-link :to="{ name: 'changeCity' }" class="change-city"
+      >切换城市</router-link
+    >
     <div class="near-city">
       <div class="near-citys">
         [

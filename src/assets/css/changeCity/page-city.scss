@@ -1,0 +1,54 @@
+.page-city {
+    @include default-center;
+    background-color: #fff;
+    box-shadow: 0 0 3px #ccc;
+    padding: 0 20px;
+    margin-top: 20px;
+
+    .line {
+        padding: 26px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .hot,
+    .lately {
+        h2 {
+            margin-right: 10px;
+        }
+
+        span {
+            color: #999;
+            margin: 0 18px;
+            font-size: 14px;
+            cursor: pointer;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    .choose {
+        padding: 20px 0;
+
+        h2 {
+            margin-right: 16px;
+        }
+
+        a {
+            color: #999;
+            margin: 0 16px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    h2 {
+        display: inline;
+        font-size: 16px;
+    }
+}
