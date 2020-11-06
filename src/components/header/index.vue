@@ -1,6 +1,6 @@
 <template>
-  <div class="header-bar clear-fix">
-      <nav-bar></nav-bar>
+  <div class="header-bar">
+      <nav-bar />
       <search-bar />
   </div>
 </template>

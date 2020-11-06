@@ -146,6 +146,7 @@ export default {
   methods: {
     provinceClick (e) {
       this.provinceValue = e
+      this.$store.commit('address', e)
     },
     cityClick (e) {
       this.cityValue = e

@@ -1,5 +1,6 @@
 .footer-content {
     @include default-center;
+
     .footer-link {
         margin-top: 40px;
         display: flex;
@@ -8,13 +9,16 @@
         border-bottom: 1px solid #ccc;
 
         padding: 20px;
+
         .footer-column {
             width: 456px;
+
             dt {
                 font-size: 14px;
                 padding-bottom: 10px;
-                padding-top:26px;
+                padding-top: 26px;
             }
+
             dd {
                 font-size: 12px;
                 line-height: 26px;
@@ -23,45 +27,62 @@
             }
         }
     }
+
     .footer-copyright {
         padding-top: 20px;
         display: flex;
         color: #999;
         font-size: 12px;
         justify-content: space-between;
+
         .footer-copyright-left {
             p {
                 padding: 6px 0;
                 color: #999;
+
                 a {
                     color: #999;
+
                     &:nth-child(2) {
                         margin: 0 12px;
                         color: #999;
                     }
                 }
-               
+
             }
-            
+
         }
+
         .footer-copyright-right {
             text-align: right;
-            
+
             a {
                 color: #999;
             }
+
             img {
                 vertical-align: middle;
             }
+
             .footer-copyright-cert {
-                display: flex;
+                text-align: left;
+                padding-top: 6px;
+
                 .bus-license {
                     img {
+                        float: left;
                         width: 38px;
                         height: 38px;
                     }
+
+                    p {
+                        float: left;
+                        line-height: 38px;
+                        padding: 0 5px;
+                    }
                 }
-                .sp-ft--record {
+                
+                a.sp-ft {
                     display: inline-block;
                     overflow: hidden;
                     text-indent: -1000px;
@@ -70,37 +91,31 @@
                     background-repeat: no-repeat;
                     margin-right: 2px;
                 }
+                 .sp-ft--knet {
+                    width: 107px;
+                    background-position: 0 -127px;
+                }
+                .sp-ft--record {
+                    width: 109px;
+                    background-position: 0 -167px;
+                }
+                .sp-ft--12315 {
+                    width: 107px;
+                    background-position: 0 -40px;
+                }
+
+
             }
         }
     }
-    
-       
-        // img {
-        //     vertical-align: middle;
-        //     &.beianicon {
-        //         width: 15px; 
-        //         height: 15px;
-        //     }
-        //     &.beianicon {
-        //         width: 15px; 
-        //         height: 15px;
-        //     }
-            
-        // }
-        // a.bus-license {
-        //    img {
-        //     width: 38px;
-        //     height: 38px;
-        //    }
-        //    p {
-        //        display: inline;
-        //    }
-        // }
-    a {
-        color: #666;
-        text-decoration: none;
-        &:hover {
-            color: #fe8c00;
-        }
+
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+
+    &:hover {
+        color: #fe8c00;
     }
 }

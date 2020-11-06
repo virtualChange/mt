@@ -1,7 +1,7 @@
 <template>
   <div class="header-bar-position">
     <i></i>
-    <span class="current-city">北京</span>
+    <span class="current-city">{{ address }}</span>
     <router-link :to="{ name: 'changeCity' }" class="change-city"
       >切换城市</router-link
     >
@@ -21,6 +21,14 @@
   </div>
 </template>
 
+<script>
+import { mapState } from 'vuex'
+export default {
+  computed: {
+    ...mapState(['address'])
+  }
+}
+</script>
 <style lang="scss">
 // @import '@/assets/css/reset/index.scss'
 </style>

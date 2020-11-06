@@ -12,6 +12,24 @@ module.exports = {
         })
         .end()
     })
-  }
-
+  },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://open.duyiedu.com',
+        changeOrigin: true
+      },
+      '/location': {
+        target: 'http://api.map.baidu.com',
+        changeOrigin: true
+      },
+      '/cityjson': {
+        target: 'http://pv.sohu.com',
+        changeOrigin: true
+      }
+    }
+  },
+  publicPath: './',
+  assetsDir: 'static',
+  outputDir: 'mt'
 }

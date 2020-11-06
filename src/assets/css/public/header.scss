@@ -1,13 +1,16 @@
 .header-bar {
-    overflow: hidden;
+    overflow: none;
+    background-color: #f8f8f8;
 
     .header-top-bar {
         @include default-center;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header-bar-position {
-        float: left;
-        padding: 12px 0;
+        height: 42px;
+        line-height: 42px;
 
         .current-city {
             color: #666;
@@ -41,7 +44,7 @@
     }
 
     .header-bar-nav {
-        float: right;
+        // float: right;
 
         ul {
             display: flex;
@@ -67,12 +70,13 @@
                 }
 
                 dl {
+                    background-color: #fff;
                     display: none;
                     position: absolute;
-                    background-color: #fff;
                     width: 100%;
                     right: 0px;
                     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
                     &.my-mt {
                         z-index: 200;
                     }
@@ -111,7 +115,7 @@
                         }
                     }
 
-                   
+
                     dl.movie {
                         width: 180px;
                     }
@@ -144,9 +148,9 @@
 
         .header-bar-seach {
             @include default-center;
+            background-color: #fff;
             display: flex;
-            margin-top: 40px;
-
+            height: 160px;
 
             .logo {
                 display: inline-block;
@@ -163,9 +167,9 @@
 
             .search-input {
                 width: 550px;
-                padding: 36px;
+                margin: 36px;
+                margin-bottom: 0;
                 position: relative;
-                height: 80px;
 
                 input {
                     outline: none;
@@ -185,22 +189,17 @@
                     border: 1px solid #FFC300;
                 }
 
-                .recommend {
-                    display: flex;
 
-                    li {
-                        padding: 10px;
-                    }
-                }
 
                 .relevance {
-                    // display: none;
                     position: absolute;
                     width: 260px;
-                    top: 74px;
-                    left: 36px;
+                    top: 39px;
+                    left: 0px;
+                    padding-top: 2px;
                     line-height: 26px;
                     z-index: 200;
+                    background-color: #fff;
 
                     border: 1px solid #ccc {
                         top: none;
@@ -211,10 +210,31 @@
                         width: 100%;
                         padding-left: 15px;
                         box-sizing: border-box;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #CCC;
+
+                            a {
+                                color: #FE8C00;
+                                display: inline-block;
+                                height: 100%;
+                                width: 100px;
+                            }
+                        }
                     }
                 }
 
 
+            }
+
+            .recommend {
+                display: flex;
+                margin-left: 40px;
+
+                li {
+                    padding: 10px;
+                }
             }
         }
     }
