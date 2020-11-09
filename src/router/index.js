@@ -20,8 +20,16 @@ const routes = [{
   }, {
     path: 's/:name',
     name: 'goodList',
-    component: () => import('@/components/goodList/index.vue')
+    component: () => import('../components/products/index.vue')
   }]
+}, {
+  path: '/login',
+  name: 'login',
+  component: () => import('../page/login')
+}, {
+  path: '/register',
+  name: 'register',
+  component: () => import('../page/register')
 }]
 
 const router = new VueRouter({

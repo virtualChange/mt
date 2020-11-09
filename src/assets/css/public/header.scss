@@ -41,6 +41,20 @@
                 margin: 0 8px 0 12px
             }
         }
+        .logins {
+            display: inline-block;
+            cursor: pointer;
+            div {
+                display: inline-block;
+                &.user-name{
+                    color: #fe8c00;
+                    margin: 0 15px;
+                }
+                &.relogin:hover{
+                    color: #fe8c00;
+                }
+            }
+        }
     }
 
     .header-bar-nav {

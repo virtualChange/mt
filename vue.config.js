@@ -29,7 +29,7 @@ module.exports = {
       }
     }
   },
-  publicPath: './',
+  publicPath: '/',
   assetsDir: 'static',
   outputDir: 'mt'
 }

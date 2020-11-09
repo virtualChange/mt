@@ -35,17 +35,22 @@
             src="//s0.meituan.net/bs/fe-web-meituan/e350c4a/img/avatar.jpg"
             alt=""
           />
-          <p class="user-name">Hi！你好</p>
-          <p class="btn-register">
-            <router-link to="{name:'register'}">
-              <el-button round>注册</el-button>
-            </router-link>
+          <p class="user-name">
+            {{ $store.state.userName ? $store.state.userName : "Hi,你好" }}
           </p>
-          <p class="btn-login">
-            <router-link to="{name:'login'}">
-              <el-button round>立即登录</el-button>
-            </router-link>
-          </p>
+          <div class="relogin" v-if="!userName">
+            <p class="btn-register">
+              <router-link :to="{ name: 'register' }">
+                <el-button round>注册</el-button>
+              </router-link>
+            </p>
+            <p class="btn-login">
+              <router-link :to="{ name: 'login' }">
+                <el-button round>立即登录</el-button>
+              </router-link>
+            </p>
+          </div>
+          <div class="logins" v-else></div>
         </div>
       </el-col>
     </el-row>
@@ -77,11 +82,16 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import slider from './slider.vue'
 export default {
   components: {
     slider
   },
+  computed: {
+    ...mapState(['userName'])
+  },
+
   data () {
     return {}
   }

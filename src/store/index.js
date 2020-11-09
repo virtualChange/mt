@@ -5,11 +5,18 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    address: '北京'
+    address: '北京',
+    userName: ''
   },
   mutations: {
     address (state, address) {
       state.address = address
+    },
+    setUserName (state, userName) {
+      state.userName = userName
+    },
+    relogin (state) {
+      state.userName = ''
     }
   },
   actions: {},

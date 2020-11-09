@@ -14,9 +14,15 @@
         ]
       </div>
     </div>
-    <div class="user-entry">
-      <router-link to="userUP" class="user-up">立即登录</router-link>
-      <router-link to="userUP" class="sign-in">注册</router-link>
+    <div class="user-entry" v-if="!userName">
+      <router-link :to="{ name: 'login' }" class="user-up"
+        >立即登录</router-link
+      >
+      <router-link :to="{ name: 'register' }" class="sign-in">注册</router-link>
+    </div>
+    <div class="logins" v-else>
+      <div class="user-name">{{ userName}}</div>
+      <div class="relogin" @click='relogin'>退出</div>
     </div>
   </div>
 </template>
@@ -25,7 +31,12 @@
 import { mapState } from 'vuex'
 export default {
   computed: {
-    ...mapState(['address'])
+    ...mapState(['address', 'userName'])
+  },
+  methods: {
+    relogin () {
+      this.$store.commit('relogin')
+    }
   }
 }
 </script>
