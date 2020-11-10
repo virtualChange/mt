@@ -1,0 +1,297 @@
+.detail-info {
+    @include default-center;
+}
+
+.detail {
+    margin-top: 20px;
+
+    .commodity {
+        height: 329px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 3px #ccc;
+        padding: 18px;
+        margin-top: 16px;
+        color: #666;
+        display: flex;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        .left {
+            width: 65%;
+
+            .header {
+                border-bottom: 1px solid #ccc;
+                padding: 12px;
+                padding-left: 0;
+
+                .score-box {
+                    height: 20px;
+                    margin-bottom: 20px;
+                }
+
+                h3 {
+                    font-size: 26px;
+                    padding-bottom: 8px;
+
+                    span {
+                        font-size: 12px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        float: right;
+
+                        b {
+                            display: inline-block;
+                            width: 15px;
+                            height: 18px;
+                            background-image: url(https://s0.meituan.net/bs/file/?f=meis/meishi.web:assets/9180fa934a07d959.png@53635fc);
+                            vertical-align: middle;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+
+
+
+                .score {
+                    font-size: 12px;
+                    margin-left: 4px;
+                    vertical-align: middle;
+                }
+
+            }
+
+            .address {
+                p {
+                    padding: 12px 0;
+                }
+
+                border-bottom: 1px solid #ccc;
+                padding: 8px 0;
+            }
+
+            .provide {
+                padding-top: 20px;
+
+                li {
+                    float: left;
+                    line-height: 17px;
+                    padding-top: 32px;
+                    position: relative;
+                    font-size: 12px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+
+        .right {
+            img {
+                border-radius: 6px;
+            }
+
+            .other {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .img {
+            height: 100%;
+            width: 35%;
+            background-color: red;
+        }
+    }
+
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.recommend {
+    .exhibition {
+        padding: 30px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    .img {
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                position: relative;
+
+                img {
+                    width: 130px;
+                    height: 130px;
+                    display: block;
+                }
+
+                span {
+                    position: absolute;
+                    color: #fff;
+                    bottom: 0;
+                    font-size: 12px;
+                    width: 100%;
+                    text-align: center;
+                    background: rgba(0, 0, 0, .3);
+                    line-height: 35px;
+                }
+            }
+        }
+
+
+    }
+
+    .food {
+        margin-top: 15px;
+
+        li {
+            display: inline-block;
+            line-height: 35px;
+            font-size: 16px;
+            margin-right: 16px;
+            color: #333;
+        }
+    }
+
+}
+
+.discounts {
+    margin: 35px 0;
+
+    .login {
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        padding-top: 30px;
+
+        img {
+            width: 160px;
+            height: 120px;
+        }
+
+        .plass-login {
+            color: #666;
+            line-height: 40px;
+        }
+
+        button {
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #13D1BE;
+            border-width: 0;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.comment {
+    margin-top: 30px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        h3 {
+            font-size: 20px;
+        }
+
+        .sort {
+            font-size: 12px;
+
+            .active {
+                color: #00c9b3;
+            }
+
+            span:first-child {
+                margin-right: 20px;
+            }
+
+            span {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .comment-info {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        display: flex;
+        padding: 30px;
+
+        .head-img {
+            padding-right: 15px;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .info {
+            .user-name {
+                padding: 6px 0;
+            }
+            .img {
+                padding: 10px;
+                img {
+                    width: 140px;
+                    height: 140px;
+                    margin-right: 15px;
+                }
+            }
+            .text {
+                padding: 8px 0;
+            }
+        }
+
+    }
+}
+
+.cont {
+    position: relative;
+    height: 18px;
+    // display: inline-block;
+
+    ul {
+        display: flex;
+    }
+
+    .icon {
+        color: #ccc;
+        position: absolute;
+        background-color: #fff;
+
+    }
+
+    .icon-linght {
+        color: #f90;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    i {
+        vertical-align: middle;
+    }
+
+}

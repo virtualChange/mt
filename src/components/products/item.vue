@@ -6,7 +6,7 @@
     <dd>
       <h3>
         <!-- <router-link :to="{name: 'productDeatil'}">{{meta.title}}</router-link> -->
-        <router-link to="/">{{meta.title}}</router-link>
+        <router-link :to="{name:'detail',params:{name:meta.title}}">{{meta.title}}</router-link>
       </h3>
       <p>
         <el-rate
@@ -39,7 +39,7 @@
       </p>
       <p>
           <span class="s-item-price">
-              人均￥{{meta.avg_price}}
+              人均￥{{meta.avgPrice}}
           </span>
       </p>
       <ul class="deal-items">

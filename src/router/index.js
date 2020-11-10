@@ -21,6 +21,11 @@ const routes = [{
     path: 's/:name',
     name: 'goodList',
     component: () => import('../components/products/index.vue')
+  },
+  {
+    path: 'detail/:name',
+    name: 'detail',
+    component: () => import('@/components/detail')
   }]
 }, {
   path: '/login',

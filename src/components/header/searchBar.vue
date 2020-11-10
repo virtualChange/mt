@@ -28,8 +28,6 @@
           </ul>
         </div>
         <ul class="recommend">
-          <!-- 推荐 -->
-          <!-- <li v-for="(re,index) in recommend" :key='index'>{{re}}</li> -->
           <li>2</li>
           <li>3</li>
           <li>4</li>
@@ -75,19 +73,6 @@ export default {
   mounted () {
     this.delayGet = this.util.shake(this.getRelevance, 500)
   }
-  // mounted () {
-  //   // 当输入框聚焦时才请求数据
-  //   this.axios
-  //     .get('/api/meituan/header/search.json', {
-  //       params: {
-  //         appkey: 'virtual_1569514431385'
-  //       }
-  //     })
-  //     .then((res) => {
-  //       console.log(res)
-  //       this.relevance = res.list
-  //     })
-  //     // /api/meituan/header/searchHotWords.json
-  // }
+
 }
 </script>

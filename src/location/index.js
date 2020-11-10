@@ -7,7 +7,7 @@ s.src = 'http://pv.sohu.com/cityjson.js'
 document.head.append(s)
 s.onload = function () {
   const ip = window.returnCitySN.cip
-  const loca = localStorage.getItem('address')
+  const loca = sessionStorage.getItem('address')
   if (loca) {
     store.commit('address', loca)
   } else {
@@ -17,7 +17,7 @@ s.onload = function () {
         const result = window.confirm(`当前位置${now},是否切换`)
         if (result) {
           store.commit('address', now)
-          localStorage.setItem('address', now)
+          sessionStorage.setItem('address', now)
         }
       }
     })
