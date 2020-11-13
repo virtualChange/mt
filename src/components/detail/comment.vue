@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import score from './score'
+import score from '@/components/detail/score'
 export default {
   props: ['comment', 'commentNum'],
   components: {

@@ -18,6 +18,7 @@
         <container :nav="recomment" />
       </el-col>
     </el-row>
+    <change-city />
   </div>
 </template>
 
@@ -25,12 +26,13 @@
 import myMenu from './menu'
 import life from './life'
 import container from './container'
-
+import changeCity from '@/components/comfirm/changeCity.vue'
 export default {
   components: {
     myMenu,
     life,
-    container
+    container,
+    changeCity
   },
   data () {
     return {

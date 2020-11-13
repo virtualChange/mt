@@ -6,7 +6,6 @@ import './util'
 import '@/axios'
 import '@/element-ui'
 import '@/directive'
-import '@/location/'
 Vue.config.productionTip = false
 
 new Vue({

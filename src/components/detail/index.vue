@@ -15,11 +15,11 @@
 </template>
 
 <script>
-import mHeader from './header'
-import discounts from './discounts'
-import recommend from './recommend'
-import comment from './comment'
-import guess from '../guessLike'
+import mHeader from '@/components/detail/header.vue'
+import discounts from '@/components/detail/discounts.vue'
+import recommend from '@/components/detail/recommend.vue'
+import comment from '@/components/detail/comment.vue'
+import guess from '@/components/guessLike/index.vue'
 export default {
   data () {
     return {

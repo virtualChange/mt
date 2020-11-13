@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import crumbs from './crumbs'
+import crumbs from '@/components/detail/crumbs'
 export default {
   props: ['describe'],
   components: {
